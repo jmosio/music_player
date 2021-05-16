@@ -19,5 +19,27 @@
             <a class="credits" href="https://github.com/jmosio/music_player"><p>Credits: Juan Osio <span class="heart">♥️</span></p></a>
         </div>
     </aside>
+    <main>
+        <audio id="audio" src="./assets/audio/" ontineupdate="updateProgress();"></audio>
+        <div class="wrapper">
+            <header class="header">
+                <img id="config" class="ico-dots" src="./assets/svg/menu.svg" alt="Icon Dots">
+                <h1 class="title">Playing Now</h1>
+            </header>
+            <section class="cards">
+                <div class="center"></div>
+            </section>
+            <section class="song">
+                <div class="song-name">
+                    <h2 id="title">Dear god - Avenged Sevenfold</h2>
+                </div>
+                <div class="progress-bar">
+                    <div id="start" class="start">0:00</div>
+                    <progress id="progress" value="0" max="100"></progress>
+                    <div id="end" class="end">0:00</div>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
